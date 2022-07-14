@@ -2,6 +2,14 @@
     margin-right: 10%;
 }
 
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 /* .container .btn {
     position: absolute;
     top: 50%;
@@ -94,4 +102,5 @@ li {
 .tab-content.hide{
     display: none;
 }
+
 

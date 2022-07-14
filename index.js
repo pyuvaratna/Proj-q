@@ -1,11 +1,22 @@
 $('#btnAdd').click(function (e) {
   var nextTab = $('#tabs li').size()+1;
-
+  str = $('#myInput').val();
+  text = document.getElementById("con").innerHTML
+ 
   // create the tab
-  $('<li><a href="#tab'+nextTab+'" data-toggle="tab">Tab '+nextTab+'</a></li>').appendTo('#tabs');
+  // function myFunction(str) {
+  //   message.innerHTML = "";
+  //   try {
+  //     if(str == "")  throw "empty";
+  //   }
+  //   catch(err) {
+  //     message.innerHTML = "Input is " + err;
+  //   }
+  // }
+  $('<li><a href="#tab'+nextTab+'" data-toggle="tab">'+str+'</a></li>').appendTo('#tabs');
   
   // create the tab content
-  $('<div class="tab-pane" id="tab'+nextTab+'"> </div>').appendTo('.tab-content');
+  $('<div class="tab-pane" id="tab'+nextTab+'">'+text+'</div>').appendTo('.tab-content');
   
   // make the new tab active
   $('#tabs a:last').tab('show');

@@ -1,5 +1,5 @@
 $('#btnAdd').click(function (e) {
-  var nextTab = $('#tabs li').size()+1;
+  var nextTab = $('#tabs li').size();
   str = $('#myInput').val();
   text = document.getElementById("con").innerHTML
  
